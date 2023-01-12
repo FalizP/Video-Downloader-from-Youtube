@@ -3,8 +3,6 @@ from time import time
 from colorama import Fore as fc
 from getDownloadPath import getDownloadPath
 
-#https://www.youtube.com/watch?v=HXYNW0ft5o4
-
 class videoDownloader():
     _url = ''
     _selectedVideo = ''
@@ -60,6 +58,10 @@ class videoDownloader():
                 print(f'{fc.RED}Download falhou...{fc.RESET}')
 
 
-url = input(f'{fc.MAGENTA}Insira o link do video:{fc.YELLOW} ')
-video = videoDownloader(url)
-video.startDownload()
+def main():
+    url = input(f'{fc.MAGENTA}Insira o link do video:{fc.YELLOW} ')
+    video = videoDownloader(url)
+    video.startDownload()
+
+if __name__ == '__main__':
+    main()
