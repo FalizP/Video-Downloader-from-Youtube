@@ -34,7 +34,6 @@ class videoDownloader():
 
     def __del__(self):
         print(f'{fc.CYAN}Rotina de downloads finalizada...{fc.RESET}')
-        time.sleep(5)
 
 
     def startDownload(self):
